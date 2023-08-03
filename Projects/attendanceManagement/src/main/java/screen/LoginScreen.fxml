@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="app_name" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="afterLoginContent" prefHeight="639.0" prefWidth="1085.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="658.0" prefWidth="1092.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="263.0" prefWidth="900.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="263.0" prefWidth="400.0" style="-fx-background-color: #d1ebe8; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text fill="#3d5c98" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="502.3040771484375">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <HBox alignment="CENTER" prefHeight="29.0" prefWidth="503.0">
+                                       <VBox.margin>
+                                          <Insets top="40.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <HBox prefHeight="29.0" prefWidth="411.0">
+                                             <children>
+                                                <Label prefHeight="27.0" prefWidth="118.0" text="User name: ">
+                                                   <HBox.margin>
+                                                      <Insets left="80.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="Arial Bold" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="usernameField" prefHeight="30.0" prefWidth="191.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="30.0" prefWidth="503.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <HBox prefHeight="30.0" prefWidth="412.0">
+                                             <children>
+                                                <Label prefHeight="27.0" prefWidth="121.0" text="Password:">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="17.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="75.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <PasswordField fx:id="passwordField" prefHeight="27.0" prefWidth="193.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <Text fx:id="invalidNoti" fill="#f20404" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="165.96368408203125" />
+                                    <HBox alignment="CENTER" prefHeight="48.0" prefWidth="503.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Button fx:id="loginButton" alignment="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="139.0" style="-fx-background-color: #3d5c98;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   
+</BorderPane>

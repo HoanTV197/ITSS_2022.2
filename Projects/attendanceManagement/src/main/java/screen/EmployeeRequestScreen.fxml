@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="62.0" prefWidth="900.0">
+               <children>
+                  <Text fill="#3d5c98" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Modify Attendance Request" wrappingWidth="331.69140625">
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="900.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="58.0" prefWidth="155.0" text="Want to Modify Date: ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="wantToModifyDate" prefHeight="27.0" prefWidth="203.0" style="-fx-border-color: #3d5c98;" />
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="In attribute: ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="23.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="wantToModifyAttribute" prefHeight="27.0" prefWidth="238.0" style="-fx-border-color: #3d5c98;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="152.0" prefWidth="900.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="152.0" text="Reason:">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="reason" prefHeight="152.0" prefWidth="575.0" style="-fx-border-color: #3c5c98;" />
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="900.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="sendButton" mnemonicParsing="false" style="-fx-background-color: #3d5c98;" text="Send Request" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="400.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

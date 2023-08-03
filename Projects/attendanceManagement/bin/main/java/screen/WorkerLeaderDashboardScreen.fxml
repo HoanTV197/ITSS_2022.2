@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="app_name" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="allContentArea" prefHeight="668.0" prefWidth="939.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="38.0" prefWidth="900.0" style="-fx-background-color: #b1ccc8;">
+                     <children>
+                        <Button fx:id="unitTab" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Unit report" />
+                        <Button fx:id="employeeTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Employee Attendance" />
+                        <Button fx:id="requestTab" mnemonicParsing="false" prefHeight="40.0" prefWidth="98.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Request" />
+                        <ImageView fx:id="notificationIcon" fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/icons8-notification-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="583.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="79.0" styleClass="logoutBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Log out" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <StackPane fx:id="contentArea" prefHeight="504.0" prefWidth="900.0" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   
+</BorderPane>

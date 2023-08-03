@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="500.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="61.0" prefWidth="900.0">
+               <children>
+                  <Text fill="#3d5c98" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications">
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="notificationsList" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../../../../Downloads/table.css" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
